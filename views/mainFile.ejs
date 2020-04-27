@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%=title%></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body>
+
+<div class="w3-container ">
+    <form method="GET" action="/fetchFilteredData">
+        <input type="text" name="hiddenXlsxFileName" value='<%=xlsxFileName%>' hidden>
+        <h5>Brand</h5>
+
+        <select class="w3-select" name="brandOption">
+            <option value="" selected>Choose your option</option>
+            <%brandoptions.forEach(function(item){%>
+            <option value='<%=item%>'><%=item%></option>
+            <%});%>
+        </select><br><br>
+
+        <h5>Style Code</h5>
+
+        <select class="w3-select" name="styleCodeOption">
+            <option value="" selected>Choose your option</option>
+            <%styleCodeoptions.forEach(function(item){%>
+            <option value='<%=item%>'><%=item%></option>
+            <%});%>
+        </select><br><br>
+
+        <h5>MRP</h5>
+
+        <select class="w3-select" name="MRPOption">
+            <option value="" selected>Choose your option</option>
+            <%MRPoptions.forEach(function(item){%>
+            <option value='<%=item%>'><%=item%></option>
+            <%});%>
+        </select><br><br>
+        <center><input type="submit" class="w3-button w3-green" value="Proceed" style="width: 50%"></center>
+    </form>
+</div>
+
+</body>
+</html>
