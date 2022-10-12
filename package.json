@@ -12,10 +12,10 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
-    "read-excel-file": "^4.0.6"
+    "read-excel-file": "^5.5.1"
   },
   "devDependencies": {
     "firebase-admin": "^8.10.0",
-    "read-excel-file": "^4.0.6"
+    "read-excel-file": "^5.5.1"
   }
 }
