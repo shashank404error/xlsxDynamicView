@@ -15,7 +15,7 @@
     "read-excel-file": "^4.0.6"
   },
   "devDependencies": {
-    "firebase-admin": "^8.10.0",
+    "firebase-admin": "^11.4.1",
     "read-excel-file": "^4.0.6"
   }
 }
